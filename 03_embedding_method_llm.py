@@ -369,7 +369,7 @@ def main():
     When we have shuffled off this mortal coil,
     Must give us pause: there's the respect
     That makes calamity of so long life.
-    """ * 10  # Repeat for more training data
+    """ * 1  # Repeat for more training data
     
     # Config
     d_model = 64
@@ -377,7 +377,7 @@ def main():
     n_heads = 2
     seq_len = 32
     batch_size = 64
-    n_epochs = 15
+    n_epochs = 2
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     print(f"\nDevice: {device}")
